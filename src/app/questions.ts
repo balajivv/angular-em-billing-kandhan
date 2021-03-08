@@ -7,7 +7,7 @@ export const questionJson = [
     reportLabel: "Reviewing patient’s record prior to visit",
     minutes: 0,
     response: [],
-    responseSelected: "1"
+    responseSelected: []
   },
   {
     questionId: "2",
@@ -17,7 +17,7 @@ export const questionJson = [
     reportLabel: "Performing a medically appropriate history and examination",
     minutes: 0,
     response: [],
-    responseSelected: "1"
+    responseSelected: []
   },
   {
     questionId: "3",
@@ -64,7 +64,7 @@ export const questionJson = [
     reportLabel: "Independently interpreting results",
     minutes: 0,
     response: [],
-    responseSelected: "1"
+    responseSelected: []
   },
   {
     questionId: "5",
@@ -113,7 +113,7 @@ export const questionJson = [
       "Obtaining/reviewing separately obtained history from someone other than patient",
     minutes: 0,
     response: [],
-    responseSelected: "1"
+    responseSelected: []
   },
   {
     questionId: "7",
@@ -162,7 +162,7 @@ export const questionJson = [
       "Referring and communicating with another healthcare provider(s)",
     minutes: 0,
     response: [],
-    responseSelected: "1"
+    responseSelected: []
   },
   {
     questionId: "9",
@@ -174,7 +174,7 @@ export const questionJson = [
       "Documenting clinical information in the patient’s electronic health record",
     minutes: 0,
     response: [],
-    responseSelected: "1"
+    responseSelected: []
   },
   {
     questionId: "10",
@@ -184,6 +184,6 @@ export const questionJson = [
     reportLabel: "Coordination of care for the patient",
     minutes: 0,
     response: [],
-    responseSelected: "1"
+    responseSelected: []
   }
 ];

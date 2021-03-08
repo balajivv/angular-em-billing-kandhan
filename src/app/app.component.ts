@@ -68,7 +68,7 @@ export class AppComponent {
       response: this.getResponseArray(questionInfo.response),
       responseSelected: [
         {
-          value: questionInfo.responseSelected,
+          value: this.getResponseArray(questionInfo.responseSelected),
           disabled: true
         }
       ]
@@ -118,7 +118,7 @@ export class AppComponent {
 
   getQuestionResponseJSON(data: any): QuestionResponseArray {
     // console.log("getQuestionResponseJSON");
-    // console.log(data.controls.response.value);
+    console.log(data.controls.response.value);
     return data.controls.response.value as QuestionResponseArray;
   }
 
