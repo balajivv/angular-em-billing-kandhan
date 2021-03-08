@@ -1,6 +1,7 @@
 import { Component, VERSION } from "@angular/core";
 import { FormArray, FormBuilder, FormControl, FormGroup } from "@angular/forms";
 import { map } from "rxjs/operators";
+import { IDropdownSettings } from 'ng-multiselect-dropdown';
 import {
   Question,
   QuestionArray,
@@ -18,6 +19,7 @@ export class AppComponent {
   questionsForm: FormGroup;
 
   questionData: QuestionArray;
+   dropdownSettings :IDropdownSettings;
 
   ngOnInit() {
     this.questionData = questionJson;
@@ -25,6 +27,16 @@ export class AppComponent {
     this.questionsForm = this.builder.group({
       billingData: this.getQuestionArray(this.questionData)
     });
+
+    this.dropdownSettings = {
+      singleSelection: false,
+      idField: 'responseId',
+      textField: 'responseLabel',
+      selectAllText: 'Select All',
+      unSelectAllText: 'UnSelect All',
+      itemsShowLimit: 3,
+      allowSearchFilter: false
+    };
 
     // console.log(this.billingDataFA);
     // console.log(this.questionsForm);

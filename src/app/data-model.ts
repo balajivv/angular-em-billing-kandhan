@@ -6,7 +6,7 @@ export class Question {
   reportLabel: string;
   minutes: Number;
   response: QuestionResponse[];
-  responseSelected: string;
+  responseSelected: QuestionResponse[];
 }
 
 export class QuestionResponse {

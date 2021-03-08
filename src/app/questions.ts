@@ -48,7 +48,13 @@ export const questionJson = [
         selected: false
       }
     ],
-    responseSelected: "1"
+    responseSelected: [
+      {
+        responseId: "1",
+        responseLabel: "Medications",
+        selected: false
+      }
+    ]
   },
   {
     questionId: "4",
@@ -89,7 +95,13 @@ export const questionJson = [
         selected: false
       }
     ],
-    responseSelected: "1"
+    responseSelected: [
+      {
+        responseId: "1",
+        responseLabel: "The patient",
+        selected: false
+      }
+    ]
   },
   {
     questionId: "6",
@@ -132,7 +144,13 @@ export const questionJson = [
         selected: false
       }
     ],
-    responseSelected: "1"
+    responseSelected: [
+      {
+        responseId: "1",
+        responseLabel: "The Patient",
+        selected: false
+      }
+    ]
   },
   {
     questionId: "8",

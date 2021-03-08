@@ -14,11 +14,19 @@
      formControlName="selected"
     /> {{item.get('questionId').value}}. {{item.get('questionLabel').value}}
 
-			<select *ngIf="item.get('questionType').value =='MC'" formControlName="responseSelected" >
+			<!-- <select *ngIf="item.get('questionType').value =='MC'" formControlName="responseSelected" >
            <option *ngFor="let op of getQuestionResponseJSON(item)"
     [value]=op.responseId>{{op.responseLabel}}</option>
 
-  </select>
+    
+
+  </select> -->
+
+  	<ng-multiselect-dropdown [placeholder]="'custom placeholder'" [data]="getQuestionResponseJSON(item)" formControlName="responseSelected" [settings]="dropdownSettings"
+	 >
+	</ng-multiselect-dropdown>
+
+
 			<!-- {{item.get('response').value | json}} -->
 			<input type="text"
      formControlName="minutes"
