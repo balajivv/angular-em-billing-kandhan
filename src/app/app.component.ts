@@ -68,7 +68,7 @@ export class AppComponent {
       response: this.getResponseArray(questionInfo.response),
       responseSelected: [
         {
-          value: this.getResponseArray(questionInfo.responseSelected),
+          value: questionInfo.responseSelected,
           disabled: true
         }
       ]
